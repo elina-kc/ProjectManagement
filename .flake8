@@ -1,0 +1,50 @@
+[flake8]
+# Ignore specific errors
+ignore =
+    # E501: line too long (max-line-length will be handled by Black)
+    E501,
+    # E203: whitespace before ':' (handled by PEP8 and black)
+    E203,
+    # check for unused imports
+    F401
+
+
+# Exclude files or directories from linting
+exclude =
+    .git,
+    __pycache__,
+    migrations,
+    .mypy_cache,
+    venv
+
+# Maximum line length
+max-line-length = 100
+max-linenumber = 400
+
+
+# Maximum McCabe complexity
+max-complexity = 12
+
+# Acceptable McCabe complexity per module
+max-module-members = 10
+
+# Maximum number of function arguments
+max-function-args = 6
+
+# Maximum number of expressions in a comprehension
+max-expressions = 5
+
+# Maximum number of nested blocks
+max-nested-blocks = 5
+
+# Maximum number of imports in a module
+max-imports = 10
+
+# Maximum number of methods in a class
+max-methods = 10
+
+# Maximum number of attributes in a class
+max-attributes = 7
+
+#maximum number of lines in a file
+max-lines = 700
